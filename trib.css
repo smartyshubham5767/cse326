@@ -1,0 +1,108 @@
+body{
+    
+  background-image: url("https://media.gettyimages.com/videos/timelapse-blue-sky-video-id1311637195?s=640x640");
+  background-repeat: no-repeat;
+  background-size: cover;
+    font-family: Comic Sans MS,sans-serif;
+    font-size: 20px;
+    text-align:center;
+  }
+  .hack{
+    color: blue;
+    border: 5px dotted black;
+    width: 50%;
+    background-color: white;
+    margin: auto;
+    text-align: center;
+  }
+  ul{
+    text-align: left;
+    line-height: 1.5;
+    margin: 0 auto 50px auto;
+    max-width: 600px;
+  }
+  blockquote{
+    max-width:650px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+  }
+  li{
+    margin:120px 0;
+  }
+  #img-div{
+    background: #fff2e6;
+    padding: 20px;
+    margin: 0;
+  }
+  .image-gallery{
+    width:100%;
+    margin-top: 50px;
+    margin-left:0px;
+    margin-right: 0px;
+}
+.images{
+    display: none;
+    width:100%;
+    border-radius: 150px 150px 150px 150px;
+    object-fit:cover;
+}
+.images img{
+    height:400px;
+    border-radius: 150px 150px 150px 150px;
+    object-fit:contain;
+    padding: 0;
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    width:auto;
+    margin-top:-22px;
+    padding: 16px ;
+    color:black;
+    text-shadow: 2px 2px 2px grey;
+    font-weight: bold;
+    font-size:30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    
+}
+.prev{
+    left:250px
+}
+.next{
+    right:250px;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    background-color: grey;
+}
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0;
+    background-color: grey;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover{
+    background-color: white;
+}
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
